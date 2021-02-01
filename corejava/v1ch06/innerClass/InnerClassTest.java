@@ -15,7 +15,7 @@ public class InnerClassTest
 {
    public static void main(String[] args)
    {
-      var clock = new TalkingClock(1000, true);
+      var clock = new TalkingClock(1000,false);
       clock.start();
 
       // keep program running until the user selects "OK"

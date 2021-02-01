@@ -21,7 +21,7 @@ public class GenericAlgorithms
       String[] ss = ArrayAlg.minmax("Tom", "Dick", "Harry");
       System.out.println(Arrays.toString(ss));
       
-      ss = ArrayAlg.minmax(String[]::new, "Tom", "Dick", "Harry");
+      ss = ArrayAlg.minmax((IntFunction<String[]>) String[]::new, "Tom", "Dick", "Harry");
       System.out.println(Arrays.toString(ss));      
    }
 }

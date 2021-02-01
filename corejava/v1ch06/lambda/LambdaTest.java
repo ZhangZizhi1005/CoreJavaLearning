@@ -26,7 +26,9 @@ public class LambdaTest
             
       var timer = new Timer(1000, event ->
          System.out.println("The time is " + new Date()));
-      timer.start();   
+      var otherTimer = new Timer(1000, System.out::println);
+      timer.start();
+      otherTimer.start();
          
       // keep program running until user selects "OK"
       JOptionPane.showMessageDialog(null, "Quit program?");
